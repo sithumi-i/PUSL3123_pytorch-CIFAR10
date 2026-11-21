@@ -1,0 +1,56 @@
+{
+  "train": {
+    "loss": 0.807832736492157,
+    "accuracy": 73.69555555555556
+  },
+  "validation": {
+    "loss": 1.342871425628662,
+    "accuracy": 54.58
+  },
+  "test": {
+    "loss": 1.341383118057251,
+    "accuracy": 54.059999999999995
+  },
+  "train_minus_test_accuracy_gap": 19.635555555555563,
+  "best_epoch": 12,
+  "parameter_count": 1707274,
+  "chosen_optimiser": "Adam lr=1e-4",
+  "total_training_seconds": 212.5556262000464,
+  "device": "cpu",
+  "gpu_name": null,
+  "per_class_test_accuracy": {
+    "ship": 68.4,
+    "automobile": 63.1,
+    "horse": 62.9,
+    "airplane": 61.9,
+    "truck": 60.5,
+    "frog": 58.7,
+    "deer": 46.3,
+    "dog": 42.9,
+    "bird": 42.2,
+    "cat": 33.7
+  },
+  "top_confused_pairs": [
+    {
+      "class A": "cat",
+      "class B": "dog",
+      "A predicted as B": 219,
+      "B predicted as A": 188,
+      "total confusions": 407
+    },
+    {
+      "class A": "automobile",
+      "class B": "truck",
+      "A predicted as B": 165,
+      "B predicted as A": 146,
+      "total confusions": 311
+    },
+    {
+      "class A": "bird",
+      "class B": "deer",
+      "A predicted as B": 153,
+      "B predicted as A": 113,
+      "total confusions": 266
+    }
+  ]
+}
