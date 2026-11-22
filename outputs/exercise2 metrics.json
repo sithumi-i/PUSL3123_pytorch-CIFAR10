@@ -1,0 +1,19 @@
+{
+  "train": {
+    "loss": 1.416572179497613,
+    "accuracy": 49.77777777777778
+  },
+  "validation": {
+    "loss": 1.4368726821899414,
+    "accuracy": 49.46
+  },
+  "test": {
+    "loss": 1.4192366647720336,
+    "accuracy": 49.38
+  },
+  "train_minus_test_accuracy_gap": 0.397777777777776,
+  "best_epoch": 30,
+  "parameter_count": 25162,
+  "optimiser": "Adam lr=1e-4",
+  "device": "cpu"
+}
