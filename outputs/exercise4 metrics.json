@@ -1,0 +1,195 @@
+{
+  "W1": {
+    "variation_id": "W1",
+    "group": "Width",
+    "name": "Width 1 (Narrow: 16->32)",
+    "short_label": "W1: 16->32",
+    "hidden_channels": [
+      16,
+      32
+    ],
+    "conv_layers": 3,
+    "parameter_count": 7978,
+    "macs_per_image": 1806336,
+    "best_epoch": 27,
+    "final_epoch_train_loss": 0.9845779656410217,
+    "train": {
+      "loss": 0.9725344340006511,
+      "accuracy": 66.03333333333333
+    },
+    "validation": {
+      "loss": 1.0231288375854493,
+      "accuracy": 64.60000000000001
+    },
+    "test": {
+      "loss": 1.00936469745636,
+      "accuracy": 64.48
+    },
+    "train_minus_test_accuracy_gap": 1.5533333333333275,
+    "train_minus_val_accuracy_gap": 1.433333333333323,
+    "mean_epoch_seconds": 1.8867793299995053,
+    "median_epoch_seconds": 1.8457835500012152,
+    "total_training_seconds": 56.60337989998516
+  },
+  "W2": {
+    "variation_id": "W2",
+    "group": "Width",
+    "name": "Width 2 (Baseline: 32->64)",
+    "short_label": "W2: 32->64 (Base)",
+    "hidden_channels": [
+      32,
+      64
+    ],
+    "conv_layers": 3,
+    "parameter_count": 25162,
+    "macs_per_image": 5971968,
+    "best_epoch": 29,
+    "final_epoch_train_loss": 0.871891987684038,
+    "train": {
+      "loss": 0.8500204564730326,
+      "accuracy": 70.50666666666666
+    },
+    "validation": {
+      "loss": 0.921926774597168,
+      "accuracy": 68.22
+    },
+    "test": {
+      "loss": 0.9183962980270386,
+      "accuracy": 68.17
+    },
+    "train_minus_test_accuracy_gap": 2.336666666666659,
+    "train_minus_val_accuracy_gap": 2.2866666666666617,
+    "mean_epoch_seconds": 2.468125450001874,
+    "median_epoch_seconds": 2.4322752000007313,
+    "total_training_seconds": 74.04376350005623
+  },
+  "W3": {
+    "variation_id": "W3",
+    "group": "Width",
+    "name": "Width 3 (Wide: 64->128)",
+    "short_label": "W3: 64->128",
+    "hidden_channels": [
+      64,
+      128
+    ],
+    "conv_layers": 3,
+    "parameter_count": 87178,
+    "macs_per_image": 21381120,
+    "best_epoch": 29,
+    "final_epoch_train_loss": 0.7787226314862569,
+    "train": {
+      "loss": 0.7619839180840386,
+      "accuracy": 73.46444444444444
+    },
+    "validation": {
+      "loss": 0.8578306998252868,
+      "accuracy": 70.7
+    },
+    "test": {
+      "loss": 0.859905520248413,
+      "accuracy": 69.98
+    },
+    "train_minus_test_accuracy_gap": 3.484444444444435,
+    "train_minus_val_accuracy_gap": 2.764444444444436,
+    "mean_epoch_seconds": 5.017573903330291,
+    "median_epoch_seconds": 4.986333850014489,
+    "total_training_seconds": 150.52721709990874
+  },
+  "D1": {
+    "variation_id": "D1",
+    "group": "Depth",
+    "name": "Depth 1 (Shallow, 2 conv: 32)",
+    "short_label": "D1: 2 Conv (32)",
+    "hidden_channels": [
+      32
+    ],
+    "conv_layers": 2,
+    "parameter_count": 3786,
+    "macs_per_image": 1622016,
+    "best_epoch": 28,
+    "final_epoch_train_loss": 1.3685560880449084,
+    "train": {
+      "loss": 1.3524075122833252,
+      "accuracy": 52.87333333333334
+    },
+    "validation": {
+      "loss": 1.3687102188110352,
+      "accuracy": 52.2
+    },
+    "test": {
+      "loss": 1.3670667819976807,
+      "accuracy": 51.49
+    },
+    "train_minus_test_accuracy_gap": 1.38333333333334,
+    "train_minus_val_accuracy_gap": 0.6733333333333391,
+    "mean_epoch_seconds": 2.955911730002845,
+    "median_epoch_seconds": 2.9887434000265785,
+    "total_training_seconds": 88.67735190008534
+  },
+  "D2": {
+    "variation_id": "D2",
+    "group": "Depth",
+    "name": "Depth 2 (Baseline, 3 conv: 32->64)",
+    "short_label": "D2: 3 Conv (Base)",
+    "hidden_channels": [
+      32,
+      64
+    ],
+    "conv_layers": 3,
+    "parameter_count": 25162,
+    "macs_per_image": 5971968,
+    "best_epoch": 29,
+    "final_epoch_train_loss": 0.871891987684038,
+    "train": {
+      "loss": 0.8500204564730326,
+      "accuracy": 70.50666666666666
+    },
+    "validation": {
+      "loss": 0.921926774597168,
+      "accuracy": 68.22
+    },
+    "test": {
+      "loss": 0.9183962980270386,
+      "accuracy": 68.17
+    },
+    "train_minus_test_accuracy_gap": 2.336666666666659,
+    "train_minus_val_accuracy_gap": 2.2866666666666617,
+    "mean_epoch_seconds": 2.468125450001874,
+    "median_epoch_seconds": 2.4322752000007313,
+    "total_training_seconds": 74.04376350005623
+  },
+  "D3": {
+    "variation_id": "D3",
+    "group": "Depth",
+    "name": "Depth 3 (Deep, 5 conv: 32->32->64->64)",
+    "short_label": "D3: 5 Conv (Deep)",
+    "hidden_channels": [
+      32,
+      32,
+      64,
+      64
+    ],
+    "conv_layers": 5,
+    "parameter_count": 71338,
+    "macs_per_image": 24846336,
+    "best_epoch": 23,
+    "final_epoch_train_loss": 0.4645233014318678,
+    "train": {
+      "loss": 0.5157476248052385,
+      "accuracy": 82.36222222222223
+    },
+    "validation": {
+      "loss": 0.6799271541595459,
+      "accuracy": 76.08
+    },
+    "test": {
+      "loss": 0.6895232103347778,
+      "accuracy": 76.3
+    },
+    "train_minus_test_accuracy_gap": 6.062222222222232,
+    "train_minus_val_accuracy_gap": 6.282222222222231,
+    "mean_epoch_seconds": 6.956082196667557,
+    "median_epoch_seconds": 6.379207200021483,
+    "total_training_seconds": 208.68246590002673
+  }
+}
