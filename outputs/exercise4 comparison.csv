@@ -1,7 +1,7 @@
-ID,Group,Architecture Variation,Conv Layers,Hidden Kernels,Trainable Parameters,Best Epoch,Train Loss,Val Loss,Test Loss,Train Accuracy (%),Val Accuracy (%),Test Accuracy (%),Train - Test Gap (%),Mean Epoch Time (s)
-W1,Width,Width 1 (Narrow: 16->32),3,16-32,7978,27,0.9725,1.0231,1.0094,66.0333,64.6,64.48,1.5533,1.6639
-W2,Width,Width 2 (Baseline: 32->64),3,32-64,25162,29,0.85,0.9219,0.9184,70.5067,68.22,68.17,2.3367,2.3064
-W3,Width,Width 3 (Wide: 64->128),3,64-128,87178,29,0.762,0.8578,0.8599,73.4644,70.7,69.98,3.4844,4.4456
-D1,Depth,"Depth 1 (Shallow, 2 conv: 32)",2,32,3786,28,1.3524,1.3687,1.3671,52.8733,52.2,51.49,1.3833,2.9694
-D2,Depth,"Depth 2 (Baseline, 3 conv: 32->64)",3,32-64,25162,29,0.85,0.9219,0.9184,70.5067,68.22,68.17,2.3367,2.3064
-D3,Depth,"Depth 3 (Deep, 5 conv: 32->32->64->64)",5,32-32-64-64,71338,23,0.5157,0.6799,0.6895,82.3622,76.08,76.3,6.0622,6.1071
+ID,Group,Architecture Variation,Conv Layers,Hidden Kernels,Trainable Parameters,MACs per Image (M),Best Epoch,Train Loss,Val Loss,Test Loss,Train Accuracy (%),Val Accuracy (%),Test Accuracy (%),Train - Test Gap (%),Median Epoch Time (s)
+W1,Width,Width 1 (Narrow: 16->32),3,16-32,7978,1.8063,27,0.9725,1.0231,1.0094,66.0333,64.6,64.48,1.5533,1.8458
+W2,Width,Width 2 (Baseline: 32->64),3,32-64,25162,5.972,29,0.85,0.9219,0.9184,70.5067,68.22,68.17,2.3367,2.4323
+W3,Width,Width 3 (Wide: 64->128),3,64-128,87178,21.3811,29,0.762,0.8578,0.8599,73.4644,70.7,69.98,3.4844,4.9863
+D1,Depth,"Depth 1 (Shallow, 2 conv: 32)",2,32,3786,1.622,28,1.3524,1.3687,1.3671,52.8733,52.2,51.49,1.3833,2.9887
+D2,Depth,"Depth 2 (Baseline, 3 conv: 32->64)",3,32-64,25162,5.972,29,0.85,0.9219,0.9184,70.5067,68.22,68.17,2.3367,2.4323
+D3,Depth,"Depth 3 (Deep, 5 conv: 32->32->64->64)",5,32-32-64-64,71338,24.8463,23,0.5157,0.6799,0.6895,82.3622,76.08,76.3,6.0622,6.3792
