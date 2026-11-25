@@ -1,0 +1,90 @@
+{
+  "Baseline CNN": {
+    "name": "Baseline CNN",
+    "dropout_rate": 0.0,
+    "data_augmentation": false,
+    "parameter_count": 25162,
+    "best_epoch": 29,
+    "train": {
+      "loss": 0.8500204564730326,
+      "accuracy": 70.50666666666666
+    },
+    "validation": {
+      "loss": 0.921926774597168,
+      "accuracy": 68.22
+    },
+    "test": {
+      "loss": 0.9183962980270386,
+      "accuracy": 68.17
+    },
+    "train_minus_test_accuracy_gap": 2.336666666666659,
+    "train_minus_val_accuracy_gap": 2.2866666666666617,
+    "total_training_seconds": 114.32885989989154
+  },
+  "CNN + Dropout (p=0.2)": {
+    "name": "CNN + Dropout (p=0.2)",
+    "dropout_rate": 0.2,
+    "data_augmentation": false,
+    "parameter_count": 25162,
+    "best_epoch": 29,
+    "train": {
+      "loss": 1.109562806892395,
+      "accuracy": 62.12222222222222
+    },
+    "validation": {
+      "loss": 1.1337696477890014,
+      "accuracy": 61.24000000000001
+    },
+    "test": {
+      "loss": 1.1322404287338257,
+      "accuracy": 60.9
+    },
+    "train_minus_test_accuracy_gap": 1.2222222222222214,
+    "train_minus_val_accuracy_gap": 0.8822222222222109,
+    "total_training_seconds": 101.60588000004645
+  },
+  "CNN + Data Augmentation": {
+    "name": "CNN + Data Augmentation",
+    "dropout_rate": 0.0,
+    "data_augmentation": true,
+    "parameter_count": 25162,
+    "best_epoch": 27,
+    "train": {
+      "loss": 0.985030812157525,
+      "accuracy": 65.81555555555556
+    },
+    "validation": {
+      "loss": 1.0157906561851502,
+      "accuracy": 64.84
+    },
+    "test": {
+      "loss": 1.0092360012054444,
+      "accuracy": 65.58
+    },
+    "train_minus_test_accuracy_gap": 0.23555555555556396,
+    "train_minus_val_accuracy_gap": 0.9755555555555588,
+    "total_training_seconds": 114.53428460011492
+  },
+  "CNN + Dropout + Augmentation": {
+    "name": "CNN + Dropout + Augmentation",
+    "dropout_rate": 0.2,
+    "data_augmentation": true,
+    "parameter_count": 25162,
+    "best_epoch": 27,
+    "train": {
+      "loss": 1.2116897101720174,
+      "accuracy": 57.64888888888889
+    },
+    "validation": {
+      "loss": 1.2171719005584716,
+      "accuracy": 57.99999999999999
+    },
+    "test": {
+      "loss": 1.2229058610916137,
+      "accuracy": 57.78
+    },
+    "train_minus_test_accuracy_gap": -0.1311111111111103,
+    "train_minus_val_accuracy_gap": -0.35111111111110205,
+    "total_training_seconds": 129.11112850002246
+  }
+}
