@@ -1,56 +1,56 @@
 {
   "train": {
-    "loss": 0.807832736492157,
-    "accuracy": 73.69555555555556
+    "loss": 0.9777737649599711,
+    "accuracy": 66.0488888888889
   },
   "validation": {
-    "loss": 1.342871425628662,
-    "accuracy": 54.58
+    "loss": 1.3375429107666015,
+    "accuracy": 52.72
   },
   "test": {
-    "loss": 1.341383118057251,
-    "accuracy": 54.059999999999995
+    "loss": 1.3465878755569458,
+    "accuracy": 53.64
   },
-  "train_minus_test_accuracy_gap": 19.635555555555563,
-  "best_epoch": 12,
+  "train_minus_test_accuracy_gap": 12.408888888888896,
+  "best_epoch": 6,
   "parameter_count": 1707274,
-  "chosen_optimiser": "Adam lr=1e-4",
-  "total_training_seconds": 212.5556262000464,
-  "device": "cpu",
-  "gpu_name": null,
+  "chosen_optimiser": "SGD lr=0.01 momentum=0.9",
+  "total_training_seconds": 219.93282580000232,
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
   "per_class_test_accuracy": {
-    "ship": 68.4,
-    "automobile": 63.1,
-    "horse": 62.9,
-    "airplane": 61.9,
-    "truck": 60.5,
-    "frog": 58.7,
-    "deer": 46.3,
-    "dog": 42.9,
-    "bird": 42.2,
-    "cat": 33.7
+    "airplane": 67.5,
+    "ship": 67.5,
+    "horse": 64.9,
+    "automobile": 63.9,
+    "frog": 57.8,
+    "truck": 56.5,
+    "dog": 46.0,
+    "deer": 43.7,
+    "cat": 37.3,
+    "bird": 31.3
   },
   "top_confused_pairs": [
     {
       "class A": "cat",
       "class B": "dog",
-      "A predicted as B": 219,
-      "B predicted as A": 188,
-      "total confusions": 407
+      "A predicted as B": 210,
+      "B predicted as A": 195,
+      "total confusions": 405
     },
     {
       "class A": "automobile",
       "class B": "truck",
       "A predicted as B": 165,
-      "B predicted as A": 146,
-      "total confusions": 311
+      "B predicted as A": 185,
+      "total confusions": 350
     },
     {
-      "class A": "bird",
-      "class B": "deer",
-      "A predicted as B": 153,
-      "B predicted as A": 113,
-      "total confusions": 266
+      "class A": "airplane",
+      "class B": "ship",
+      "A predicted as B": 127,
+      "B predicted as A": 115,
+      "total confusions": 242
     }
   ]
 }

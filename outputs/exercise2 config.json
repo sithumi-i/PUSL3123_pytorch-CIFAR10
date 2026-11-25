@@ -1,0 +1,11 @@
+{
+  "architecture": "Conv(3,32,3)-ReLU-MaxPool -> Conv(32,64,3)-ReLU-MaxPool -> Conv(64,10,3) -> GlobalAvgPool",
+  "optimiser": {
+    "name": "SGD lr=0.01 momentum=0.9",
+    "class": "SGD",
+    "settings": {
+      "lr": 0.01,
+      "momentum": 0.9
+    }
+  }
+}
